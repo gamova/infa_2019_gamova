@@ -23,8 +23,7 @@ def house(x, y, z):
 	brushColor('Thistle')
 	rectangle(x+z*1.5,y+z, x+z*2.5,y+z*2)
 
-house(30, 250, 50)
-house(330, 250, 25)
+house(50, 250, 50)
 
 
 def cloud(x, y, radius, z):
@@ -36,15 +35,11 @@ def cloud(x, y, radius, z):
 	for i in range(2):
 		circle(x-z*6,y-z*2,radius)
 		x -= z*3
-cloud(100,100,30,10)
-cloud(350,50,30,10)
-cloud(300,150,20,7)
-
-
+cloud(230,120,30,10)
 
 
 def wood(x, y, radius, z):
-	penSize(z-10)
+	penSize(20)
 	penColor('Black')
 	moveTo(x,y+z*2)
 	lineTo(x,y+z*6)
@@ -56,8 +51,7 @@ def wood(x, y, radius, z):
 		circle(x+z,y+z,radius)
 		y+=40
 		z-=5
-wood(300,200,30,30)
-wood(460,200,20,20)
+wood(430,200,30,30)
 
 
 
@@ -89,9 +83,9 @@ def sun(x, y, r, rs):
 	(x + rs*math.cos(6.25), y + rs*math.sin(6.25)),
 	(x + r*math.cos(6.5), y + r*math.sin(6.5)),
 	(x + rs*math.cos(6.75), y + rs*math.sin(6.75)),
-	(x + r*math.cos(0.5), y + r*math.sin(0.5))
+	(x + r*math.cos(0.5), (y + r*math.sin(0.5)))
 	])
-sun(40, 40, 30, 35)
+sun(450, 50, 30, 35)
 
 
 run()
